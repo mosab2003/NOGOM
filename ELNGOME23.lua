@@ -13,8 +13,9 @@ if pass[1].."0" == code.."0" then gg.toast("🔓Correct Password☺️️")
 gg.alert("🔒Incorrect Password️😭")  
  return end
 ------------------------------------Processes---------------------------------------------------------------
-	srch = tostring (search)
+	
  function NOGOM(search,type,refine,results,edit,S,R,E,C)
+	srch = tostring (search)
     rfn = tostring (refine)          
     edt = tostring (edit)
 	if S == 1 then gg.searchNumber(srch , type, false, 536870912, 0, -1, 0) end
