@@ -752,7 +752,7 @@ gg.toast("✰تم التعديل✰")end
   --end
 
 -----------------------------------------------------------------------------------------------------------
-  function ex (z)gg.setVisible(false)
+  function ex (z)
 	THSH = -1
 	gg.skipRestoreState()
 	gg.setVisible(false)
