@@ -385,7 +385,7 @@ end
 
 gg.setVisible(false)
 function resort_1 () 
-
+gg.setVisible(false)
 input = gg.prompt({'✰🔍اسم المنتج🔎✰'},{'دخلت متسول هتطلع ملياردير  🤑🤑'},{'text'})
 	if input ==nil then
 		resort() end
