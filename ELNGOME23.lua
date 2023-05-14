@@ -358,7 +358,23 @@ end
 ---------- المهام اليومية
 function daily_tasks()
 	gg.setVisible(false)
-gg.alert("انتظر")
+if file_exists("/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/data.lua") then 
+if not file_exists("/data/data/com.funplus.familyfarm/Resources/scripts/vip/elngome.txt") then 
+	urls={'https://drive.google.com/uc?export=download&id=1muVeBhsN9X1rARMfMhj6VBRz4mwf2Q6i', 'https://drive.google.com/uc?export=download&id=1myyxA4jrR8Tyok04uWHvPu2gzpC80MTP', 'https://drive.google.com/uc?export=download&id=1n4DvrSA-JI7kfSj0yac7mXQNLUnV7uQu', 'https://drive.google.com/uc?export=download&id=1n6M8SwU5D9o-SO3cuoftT2FExL2tDwZJ', }
+	files={"/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/data.lua", "/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/questCell.lua", "/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/controller.lua", "/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/launcher.lua", }
+	for i=1, #urls do
+	    getalldata= (gg.makeRequest(urls[i]).content)
+		file = io.open(files[i], "wb")
+		file:write(getalldata)
+		io.close(file)
+	end
+	file = io.open("/data/data/com.funplus.familyfarm/Resources/scripts/vip/elngome.txt", "wb")
+	file:write("Done")
+    io.close(file)
+    colse () 
+end
+end
+mo_salah("27000~27099E;1~2000E ",64, 300,0, 1,"1~2000")
 end
 
 
