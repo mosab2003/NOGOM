@@ -356,24 +356,9 @@ if speci[8] == true then HOME() end
 ex(4)
 end
 ---------- المهام اليومية
-function daily_tasks()gg.setVisible(false)
-if file_exists("/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/data.lua") then 
-if not file_exists("/data/data/com.funplus.familyfarm/Resources/scripts/vip/check.txt") then 
-	urls={'https://drive.google.com/uc?export=download&id=1X_1t-gTyRXRPijz2v2VhzxelTEric02Q', 'https://drive.google.com/uc?export=download&id=1Xf0ADVY8tTRblqnqg7qFR99cQKaI_xhK', 'https://drive.google.com/uc?export=download&id=1Xz_GM9GQqKAujyR-vndsTR9DWQigEEMI', 'https://drive.google.com/uc?export=download&id=1Y-furmijF_HiKL6uHRowXAjDKdizB8fO', }
-	files={"/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/data.lua", "/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/questCell.lua", "/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/controller.lua", "/data/data/com.funplus.familyfarm/Resources/scripts/daily_quest/launcher.lua", }
-	for i=1, #urls do
-	    getalldata= (gg.makeRequest(urls[i]).content)
-		file = io.open(files[i], "wb")
-		file:write(getalldata)
-		io.close(file)
-	end
-	file = io.open("/data/data/com.funplus.familyfarm/Resources/scripts/vip/check.txt", "wb")
-	file:write("ok")
-    io.close(file)
-    colse () 
-end
-end
-NOGOM("27000~27099E;1~2000E ",64, nil,300,"1~2000",1,nil,1,1)
+function daily_tasks()
+	gg.setVisible(false)
+gg.alert("انتظر")
 end
 
 
