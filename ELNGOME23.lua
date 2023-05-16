@@ -354,7 +354,8 @@ if speci[4] == true then NOGOM('3E;49285D::13',64,'3',300,'4',1,1,1) end
 if speci[5] == true then NOGOM('1030006',4,nil,300 ,'1030005', 1,nil,1,1)end 
 if speci[6] == true then NOGOM('1;10;60',64,'1',100,'0',1,1,1,1) end
 if speci[7] == true then NOGOM('80;600;1800',4,nil,100,'0',1,nil,1,1) end
-if speci[8] == true then HOME() end
+if speci[8] == true then factories() end
+if speci[9] == true then HOME() end
 ex(4)
 end
 ---------- المهام اليومية
