@@ -11,7 +11,7 @@ local pass = gg.prompt({ "   🔐 Enter Password 🔐:-" ..code.. " !"},{[1]=" �
 if not pass then return end
 if pass[1].."0" == code.."0" then gg.toast("🔓Correct Password☺️️")
  else 
-gg.alert("🔒Incorrect Password️😭")  
+gg.alert("❌ Wʀᴏɴɢ Pᴀssᴡᴏʀᴅ Pʟᴇᴀsᴇ Tʀʏ Aɢᴀɪɴ! ❌")
  return end
 ------------------------------------Processes---------------------------------------------------------------
 	
@@ -29,7 +29,7 @@ end
 gg.alert("\t\t\t\t\t\t\t╔╰❥❣✰═════✬⋆✪⋆✬═════✰❣✿╗\n\t\t\t\t\t\t\t↣╰❥❣✰══✬⋆﷽⋆✬══✰❣✿ \n\t\t\t\t\t\t\t╚╰❥❣✰═══✬⋆ELNGOME⋆✬═══✰❣✿╝") 
 gg.alert(os.date("\t\t\t\t\t📅 %d %B %Y        \t\t\t\t\t\t\t\t\t🕐%I:%M:%S\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t♛★صلي على النبي★♛ \n\n\t\t\t\t\t\t\t\t\t\t♛★اللهم صّلِ وسَلّمْ عَلۓِ نَبِيْنَامُحَمد ﷺ★♛"))
 gg.setVisible(false)
- gg.sleep(200)
+gg.sleep(200)
 gg.toast("Loading.. ")
 gg.sleep(200)
 gg.toast("▓▒▒▒▒0%▒▒▒▒▒")
@@ -160,7 +160,7 @@ function club_level()
 gg.setVisible(false)	
 level_club= gg.prompt({'📆 أدخل عدد ايام أيام الدخول 📆',},{'📆number days📆'},{'text'})
  if level_club ==nil then HOME()
- else NOGOM(  level_club[1],32,    nil,     9999,    '0',1,1,1,1)end
+ else NOGOM(  level_club[1],32,    nil,     9999,    '999999',1,nil,1,1)end
 end
 ------------طلب مطورات من الجيران--------
 function developer ()
@@ -614,7 +614,7 @@ if lib==11 then NOGOM ('20026',4,nil,2000,'5115',1,nil,1,1) end
 if lib==12 then NOGOM ('20026',4,nil,2000,'5123',1,nil,1,1) end
 if lib==13 then NOGOM ('20026',4,nil,2000,'5125',1,nil,1,1) end
 if lib==14 then NOGOM ('20026',4,nil,2000,'5127',1,nil,1,1) end
-if lib==15 then gg.alert (ananola) NOGOM ('7014',4,nil,2000,'7046',1,nil,1,1) end
+if lib==15 then NOGOM ('20026',4,nil,2000,'7046',1,nil,1,1) end
 if lib==16 then gg.alert (ananola)NOGOM ('7014',4,nil,2000,'7048',1,nil,1,1) end
 if lib==17 then HOME() end
 ex(7)
@@ -635,7 +635,7 @@ end
 
 
 function HOME9() gg.setVisible(false)
-gg.alert("♡تمت الاضافة بمساعدة وابداع♡ \n     ♡ محمد صلاح ♡  ")
+gg.toast("♡تمت الاضافة بمساعدة وابداع♡ \n     ♡ محمد صلاح ♡  ")
 help_menu= gg.choice(Help_menu, nil,hh) 
 	if help_menu == nil then ex(9) end
 	if help_menu == 1 then help_menu_1() end
