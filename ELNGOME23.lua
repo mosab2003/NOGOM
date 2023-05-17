@@ -9,7 +9,7 @@ gg.setVisible(false)
   local code = math.random(100, 900)
 local pass = gg.prompt({ "   🔐 Enter Password 🔐:-" ..code.. " !"},{[1]=" 🔐Password🔐"},{[1]="number"})
 if not pass then return end
-if pass[1].."0" == code.."0" then gg.toast("🔓Correct Password☺️️")
+if pass[1].."0" == code.."0" then gg.toast("✔️ Cᴏʀʀᴇᴄᴛ Pᴀssᴡᴏʀᴅ ✔️\n🔓 Wᴇʟᴄᴏᴍᴇ 🔓")
  else 
 gg.alert("❌ Wʀᴏɴɢ Pᴀssᴡᴏʀᴅ Pʟᴇᴀsᴇ Tʀʏ Aɢᴀɪɴ! ❌")
  return end
