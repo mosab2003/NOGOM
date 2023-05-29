@@ -515,7 +515,7 @@ function resort_2 ()     gg.setVisible(false)
 				table.insert(not_deleted, lines_alt[i])
 			end
 		end
-		file = io.open('save.txt', 'w+')
+		file = io.open('Stars.txt', 'w+')
        for i=#not_deleted, 1, #lines do
           file:write(not_deleted[i], '\n') 
        end
